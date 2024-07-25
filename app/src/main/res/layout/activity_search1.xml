@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".Search_Activity_1">
+
+    <TextView
+        android:id="@+id/top_grey_block"
+        android:layout_width="414dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bhcc_logo"
+        android:layout_width="186dp"
+        android:layout_height="51dp"
+        android:src="@drawable/bhcc_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_grey_block" />
+
+    <ImageView
+        android:id="@+id/person_icon"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        android:src="@drawable/person_24"
+        app:layout_constraintBottom_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toEndOf="@+id/bhcc_logo"
+        app:layout_constraintTop_toTopOf="@+id/top_grey_block"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/users_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintEnd_toEndOf="@+id/top_grey_block"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/bhcc_logo"
+        app:layout_constraintTop_toBottomOf="@+id/person_icon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/picture_image"
+        android:layout_width="420dp"
+        android:layout_height="550dp"
+        android:src="@drawable/background4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Campus:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_grey_block" />
+
+    <TextView
+        android:id="@+id/campus_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/grey_1"
+        app:layout_constraintBottom_toTopOf="@+id/picture_image"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/top_grey_block" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:text="Room:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/campus_textview"
+        app:layout_constraintTop_toBottomOf="@+id/top_grey_block" />
+
+    <TextView
+        android:id="@+id/room_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/grey_1"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/picture_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/top_grey_block" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Items"
+        android:textColor="@color/grey_1"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/picture_image" />
+
+    <ListView
+        android:id="@+id/item_list_in_a_room"
+        android:layout_width="374dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+<!--    <Button-->
+<!--        android:id="@+id/start_new_inventory_button"-->
+<!--        android:layout_width="278dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@color/grey_1"-->
+<!--        android:text="Start a new Inventory"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/item_list_in_a_room" />-->
+
+    <Button
+        android:id="@+id/add_item_button"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/orange"
+        android:text="Add Item"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_in_a_room" />
+
+    <Button
+        android:id="@+id/edit_list_button"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:background="@color/orange"
+        android:text="Edit List"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/add_item_button"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_in_a_room" />
+
+    <Button
+        android:id="@+id/delete_list_button"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey_1"
+        android:text="Delete List"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_item_button" />
+
+    <TextView
+        android:id="@+id/print_list_button"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toEndOf="@+id/view_list_button"
+        app:layout_constraintTop_toBottomOf="@+id/delete_list_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/printer_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/printer_24"
+        app:layout_constraintBottom_toBottomOf="@+id/print_list_button"
+        app:layout_constraintEnd_toEndOf="@+id/print_list_button"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/print_list_button"
+        app:layout_constraintTop_toTopOf="@+id/print_list_button"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print list"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/print_list_button"
+        app:layout_constraintEnd_toEndOf="@+id/print_list_button"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/print_list_button"
+        app:layout_constraintTop_toBottomOf="@+id/printer_image" />
+
+    <TextView
+        android:id="@+id/view_list_button"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_list_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/view_list_24"
+        app:layout_constraintBottom_toBottomOf="@+id/view_list_button"
+        app:layout_constraintEnd_toEndOf="@+id/view_list_button"
+        app:layout_constraintStart_toStartOf="@+id/view_list_button"
+        app:layout_constraintTop_toTopOf="@+id/view_list_button"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View list"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view_list_button"
+        app:layout_constraintEnd_toEndOf="@+id/view_list_button"
+        app:layout_constraintStart_toStartOf="@+id/view_list_button"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNav"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

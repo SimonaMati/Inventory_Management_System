@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">BHCC_IMS_SM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_s_name">User\'s name</string>
+    <string name="search">Search</string>
+    <string name="add_a_new_room">Add a new room</string>
+    <string name="statistics">Statistics</string>
+    <string name="campus_map">Campus Map</string>
+    <string name="all_inventory_lists">All inventory lists</string>
+    <string name="enter_room_name_number">Enter room name/number</string>
+    <string name="event_room_name_number">Event room name/number</string>
+
+    <string-array name="campus_array">
+        <item>Select a Campus</item>
+        <item>Charlestown</item>
+        <item>Chelsea</item>
+    </string-array>
+
+    <string-array name="building_array">
+        <item>Select a Building</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+    <string-array name="item_array">
+        <item>Select an Item</item>
+        <item>Camera</item>
+        <item>Computer</item>
+        <item>Laptop</item>
+        <item>Monitor</item>
+        <item>Printer</item>
+        <item>Projector</item>
+        <item>Scanner</item>
+        <item>Smart Board</item>
+    </string-array>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="save">Save</string>
+
+</resources>

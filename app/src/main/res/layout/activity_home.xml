@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/top_grey_block"
+        android:layout_width="414dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bhcc_logo"
+        android:layout_width="186dp"
+        android:layout_height="51dp"
+        android:src="@drawable/bhcc_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_grey_block" />
+
+    <ImageView
+        android:id="@+id/person_icon"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        android:src="@drawable/person_24"
+        app:layout_constraintBottom_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toEndOf="@+id/bhcc_logo"
+        app:layout_constraintTop_toTopOf="@+id/top_grey_block"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/users_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintEnd_toEndOf="@+id/top_grey_block"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/bhcc_logo"
+        app:layout_constraintTop_toBottomOf="@+id/person_icon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/half_image"
+        android:layout_width="188dp"
+        android:layout_height="569dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/background3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/searchButton_home"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="84dp"
+        android:background="@color/grey_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_grey_block" />
+
+    <TextView
+        android:id="@+id/text_block_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:text="@string/search"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/searchButton_home"
+        app:layout_constraintEnd_toEndOf="@+id/searchButton_home"
+        app:layout_constraintTop_toTopOf="@+id/searchButton_home"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <ImageView
+        android:id="@+id/search_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/search_24"
+        app:layout_constraintBottom_toBottomOf="@+id/searchButton_home"
+        app:layout_constraintEnd_toStartOf="@+id/text_block_1"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="@+id/searchButton_home"
+        app:layout_constraintTop_toTopOf="@+id/searchButton_home"
+        app:layout_constraintVertical_bias="0.565" />
+
+    <TextView
+        android:id="@+id/addNewRoomButtonHome"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/grey_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchButton_home" />
+
+    <TextView
+        android:id="@+id/text_block_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="@string/add_a_new_room"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/addNewRoomButtonHome"
+        app:layout_constraintEnd_toEndOf="@+id/addNewRoomButtonHome"
+        app:layout_constraintTop_toTopOf="@+id/addNewRoomButtonHome"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <ImageView
+        android:id="@+id/plus_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/add_24"
+        app:layout_constraintBottom_toBottomOf="@+id/addNewRoomButtonHome"
+        app:layout_constraintEnd_toStartOf="@+id/text_block_2"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="@+id/addNewRoomButtonHome"
+        app:layout_constraintTop_toTopOf="@+id/addNewRoomButtonHome" />
+
+    <TextView
+        android:id="@+id/statisticsButtonHome"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/grey_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNewRoomButtonHome" />
+
+    <TextView
+        android:id="@+id/text_block_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:text="@string/statistics"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/statisticsButtonHome"
+        app:layout_constraintEnd_toEndOf="@+id/statisticsButtonHome"
+        app:layout_constraintTop_toTopOf="@+id/statisticsButtonHome"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <ImageView
+        android:id="@+id/chart_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/chart_outlined_24"
+        app:layout_constraintBottom_toBottomOf="@+id/statisticsButtonHome"
+        app:layout_constraintEnd_toStartOf="@+id/text_block_3"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="@+id/statisticsButtonHome"
+        app:layout_constraintTop_toTopOf="@+id/statisticsButtonHome" />
+
+    <TextView
+        android:id="@+id/campusMapButtonHome"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/grey_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statisticsButtonHome" />
+
+    <TextView
+        android:id="@+id/text_block_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:text="@string/campus_map"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/campusMapButtonHome"
+        app:layout_constraintEnd_toEndOf="@+id/campusMapButtonHome"
+        app:layout_constraintTop_toTopOf="@+id/campusMapButtonHome"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <ImageView
+        android:id="@+id/map_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/map_24"
+        app:layout_constraintBottom_toBottomOf="@+id/campusMapButtonHome"
+        app:layout_constraintEnd_toStartOf="@+id/text_block_4"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="@+id/campusMapButtonHome"
+        app:layout_constraintTop_toTopOf="@+id/campusMapButtonHome" />
+
+    <TextView
+        android:id="@+id/inventoryListButtonHome"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/grey_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campusMapButtonHome" />
+
+    <TextView
+        android:id="@+id/text_block_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="@string/all_inventory_lists"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/inventoryListButtonHome"
+        app:layout_constraintEnd_toEndOf="@+id/inventoryListButtonHome"
+        app:layout_constraintTop_toTopOf="@+id/inventoryListButtonHome"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/list_bulleted_24"
+        app:layout_constraintBottom_toBottomOf="@+id/inventoryListButtonHome"
+        app:layout_constraintEnd_toStartOf="@+id/text_block_5"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="@+id/inventoryListButtonHome"
+        app:layout_constraintTop_toTopOf="@+id/inventoryListButtonHome"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNav"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

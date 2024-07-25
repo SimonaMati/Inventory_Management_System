@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_24_filled"
+        android:title="Home" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search_24"
+        android:title="Search" />
+    <item
+        android:id="@+id/statistics"
+        android:icon="@drawable/chart_outlined_24"
+        android:title="Statistics" />
+
+    <item
+        android:id="@+id/campus_map"
+        android:icon="@drawable/map_24"
+        android:title="Campus Map" />
+    <item
+        android:id="@+id/inventory_lists"
+        android:icon="@drawable/list_bulleted_24"
+        android:title="Lists" />
+</menu>

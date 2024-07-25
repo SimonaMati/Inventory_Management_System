@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".UserPageActivity">
+
+    <TextView
+        android:id="@+id/top_grey_block"
+        android:layout_width="414dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bhcc_logo"
+        android:layout_width="186dp"
+        android:layout_height="51dp"
+        android:src="@drawable/bhcc_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_grey_block" />
+
+    <ImageView
+        android:id="@+id/person_icon"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        android:src="@drawable/person_24"
+        app:layout_constraintBottom_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toEndOf="@+id/bhcc_logo"
+        app:layout_constraintTop_toTopOf="@+id/top_grey_block"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/users_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintEnd_toEndOf="@+id/top_grey_block"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/bhcc_logo"
+        app:layout_constraintTop_toBottomOf="@+id/person_icon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/half_image"
+        android:layout_width="188dp"
+        android:layout_height="569dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/background3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_grey_block"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/edit_user_info_button"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="152dp"
+        android:background="@color/grey_1"
+        android:text="Edit User Information"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_grey_block" />
+
+    <Button
+        android:id="@+id/change_password_button"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/grey_1"
+        android:text="Change password"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_user_info_button" />
+
+    <Button
+        android:id="@+id/user_made_lists_button"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/grey_1"
+        android:text="User's lists"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_password_button" />
+
+    <!--    <FrameLayout-->
+<!--        android:id="@+id/container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@+id/bottomNav">-->
+
+<!--      -->
+<!--    </FrameLayout>-->
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="Sign out"
+        android:textStyle="bold"
+        android:background="@color/yellow"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_made_lists_button" />
+
+    <Button
+        android:id="@+id/deleteAccountButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Delete account"
+        android:textStyle="bold"
+        android:background="@color/orange"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/signOutButton"
+        app:layout_constraintTop_toBottomOf="@+id/user_made_lists_button" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
